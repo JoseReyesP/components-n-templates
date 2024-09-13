@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us</title>
+    <meta name="description" content="contact us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="script.js" async defer></script>
+    <div class="app-root">
+      <div id="map-background">
+        <img src="map-lines.png" alt="map-lines" />
+        <main>
+          <section id="left-side">
+            <h1 id="title">Contact Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              ratione vel, suscipit aspernatur praesentium possimus recusandae a
+              eum quaerat dolores ipsam alias harum in cumque quas quis laborum
+              ex officia.
+            </p>
+            <div id="address-container">
+              <div id="address">
+                <h2>Floridablanca, Santander</h2>
+                <p>123 fake street</p>
+              </div>
+              <div id="corner"></div>
+              <div id="circle-wrapper">
+                <div id="circle"></div>
+              </div>
+            </div>
+          </section>
+          <section id="right-side">
+            <div id="form-container">
+              <form action="/" method="post"></form>
+              <input
+                class="contact-input"
+                type="text"
+                name="name"
+                id="name-input"
+                placeholder="Name"
+              />
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                id="email-input"
+                placeholder="Email"
+              />
+              <input
+                class="contact-input"
+                type="text"
+                name="phone"
+                id="phone-input"
+                placeholder="Phone"
+              />
+              <fieldset>
+                <legend>
+                  <p id="preferred-contact-method">
+                    Preferred contact method of communication
+                  </p>
+                </legend>
+                <div>
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    id="email-method"
+                    value="email-method"
+                    checked
+                  />
+                  <label for="email-method"> Email</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    id="phone-method"
+                    value="phone-method"
+                  />
+                  <label for="phone-method">Phone</label>
+                </div>
+              </fieldset>
+              <textarea
+                name="contact-message"
+                id="contact-message"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function setBigView(path, imgElement) {
+        document.getElementsByClassName("big-view-img")[0].src = path;
+        document.querySelector(".portrait-img").classList.toggle("clicked");
+
+        var images = document.querySelectorAll(".portrait-img");
+
+        images.forEach((img) => {
+          img.classList.remove("clicked");
+          img.classList.add("dimmed");
+        });
+
+        imgElement.classList.add("clicked");
+        imgElement.classList.remove("dimmed");
+
+        switch (path) {
+          case "./green.jpg":
+            document.querySelector(".title").innerHTML = "Green";
+
+            break;
+          case "./orange.jpg":
+            document.querySelector(".title").innerHTML = "Orange";
+            break;
+          case "./blue.jpg":
+            document.querySelector(".title").innerHTML = "Blue";
+            break;
+          case "./purple.jpg":
+            document.querySelector(".title").innerHTML = "Purple";
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="big-view">
+        <img src="./purple.jpg" alt="portrait-1" class="big-view-img" />
+      </div>
+      <div class="gradient"></div>
+      <h1 class="title"></h1>
+    </div>
+
+    <div class="img-selector">
+      <img
+        src="./purple.jpg"
+        alt="portrait-1"
+        class="portrait-img clicked"
+        onclick='setBigView("./purple.jpg", this)'
+      />
+      <img
+        src="./orange.jpg"
+        alt="portrait-2"
+        class="portrait-img dimmed"
+        onclick='setBigView("./orange.jpg", this)'
+      />
+      <img
+        src="./green.jpg"
+        alt="portrait-3"
+        class="portrait-img dimmed"
+        onclick='setBigView("./green.jpg", this)'
+      />
+      <img
+        src="./blue.jpg"
+        alt="portrait-4"
+        class="portrait-img dimmed"
+        onclick='setBigView("./blue.jpg", this)'
+      />
+    </div>
+  </body>
+</html>

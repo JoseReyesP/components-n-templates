@@ -1,0 +1,160 @@
+body {
+  background-color: rgb(247, 216, 171);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header {
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 400px;
+  height: 600px;
+  background-color: white;
+}
+
+.text-content {
+  text-align: center;
+}
+
+h1,
+h3 {
+  margin: 0;
+  font-family: sans-serif;
+}
+h3 {
+  color: rgb(109, 109, 109);
+}
+
+p {
+  text-align: justify;
+  padding: 15px;
+  font-family: sans-serif;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button {
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.buttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons img {
+  margin-top: 15px;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.img-container {
+  display: flex;
+  margin-top: -150px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.img-container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.container-animation {
+  width: 400px;
+  height: 200px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.shape-1 {
+  position: absolute;
+  left: 0px;
+  width: 600px;
+  height: 200px;
+  background-color: #007bff;
+  clip-path: url(#wave);
+  animation: waveAnimation-1 5s linear infinite;
+}
+
+.shape-2 {
+  position: absolute;
+  left: 150;
+  width: 600px;
+  height: 200px;
+  background-color: #007bff;
+  clip-path: url(#wave);
+  animation: waveAnimation-2 5s linear infinite;
+}
+
+.shape-3 {
+  position: absolute;
+  opacity: 0.5;
+  left: 0px;
+  width: 600px;
+  height: 200px;
+  background-color: #6b2be2;
+  clip-path: url(#wave);
+  animation: waveAnimation-1 2.5s linear infinite;
+}
+
+.shape-4 {
+  opacity: 0.5;
+  position: absolute;
+  left: 150;
+  width: 600px;
+  height: 200px;
+  background-color: #6b2be2;
+  clip-path: url(#wave);
+  animation: waveAnimation-2 2.5s linear infinite;
+}
+
+@keyframes waveAnimation-1 {
+  0% {
+    clip-path: url(#wave);
+    transform: translateX(0px);
+  }
+  100% {
+    clip-path: url(#wave);
+    transform: translateX(-600px);
+  }
+}
+
+@keyframes waveAnimation-2 {
+  0% {
+    clip-path: url(#wave);
+    transform: translateX(600px);
+  }
+  100% {
+    clip-path: url(#wave);
+    transform: translateX(0px);
+  }
+}

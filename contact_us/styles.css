@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app-root {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(10, 10, 112),
+    rgb(128, 13, 53)
+  );
+}
+
+#map-background {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#map-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: soft-light;
+  opacity: 0.3;
+}
+
+main {
+  display: flex;
+  position: absolute;
+  height: 100%;
+}
+
+#left-side {
+  flex: 1;
+  perspective: 1000px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem;
+}
+
+#title {
+  font-size: 5rem;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 1rem;
+}
+
+#address-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#address {
+  width: 20rem;
+  border-radius: 50px;
+  background-color: #3498db;
+  padding: 5px;
+}
+
+#address h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: #f7fbfd;
+}
+
+#address p {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #1e5275;
+}
+
+#corner {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 25px solid #3498db;
+}
+
+#circle-wrapper {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 5px; /* This controls the space between the circle and the outline */
+  border: 3px solid #3498db; /* This is the outline */
+  border-radius: 100%; /* Makes sure the wrapper is circular */
+}
+
+#circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #3498db;
+}
+
+#right-side {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+  height: 95%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(10px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+fieldset {
+  display: flex;
+  border-radius: 10px;
+}
+
+label {
+  color: white;
+}
+
+input[type="radio"]:checked {
+  accent-color: rgb(233, 1, 233);
+}
+
+button[type="submit"] {
+  background-color: rgb(228, 25, 140);
+  color: white;
+  border-style: none;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-size: large;
+}
+
+textarea {
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-input {
+  width: auto;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  accent-color: rgb(233, 1, 233);
+}

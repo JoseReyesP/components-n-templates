@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="min-container" class="side-miniatures">
+        <img
+          class="clicked"
+          src="./photo-1.png"
+          alt="polo-1"
+          onclick="handleClicked('.side-miniatures', this)"
+        />
+        <img
+          class="dimmed"
+          src="./photo-2.png"
+          alt="polo-2"
+          onclick="handleClicked('.side-miniatures', this)"
+        />
+        <img
+          class="dimmed"
+          src="./photo-3.png"
+          alt="polo-3"
+          onclick="handleClicked('.side-miniatures', this)"
+        />
+      </div>
+      <div class="big-preview">
+        <img id="bigView" src="./photo-1.png" alt="polo-1" />
+      </div>
+      <div class="product-info">
+        <p class="brand">POLO RALPH</p>
+        <h1 class="product-name">Custom Fit Polo Bear Oxford Shirt</h1>
+        <p class="description">
+          Blue polo with a classic cut. Made of smooth and soft cotton
+        </p>
+
+        <div class="price-container">
+          <div class="price-n-discount">
+            <h2 class="final-price">$99.00</h2>
+            <div class="price-discount"><p>-25%</p></div>
+          </div>
+          <div class="initial-price">
+            <p><del>$132.00</del></p>
+          </div>
+        </div>
+
+        <div class="size-container">
+          <p class="size-title">CHOOSE SIZE</p>
+          <ul id="size-list" class="size-options">
+            <li class="clicked" onclick="handleClicked('.size-options', this)">
+              <p>S</p>
+            </li>
+            <li class="dimmed" onclick="handleClicked('.size-options', this)">
+              <p>M</p>
+            </li>
+            <li class="dimmed" onclick="handleClicked('.size-options', this)">
+              <p>L</p>
+            </li>
+            <li class="dimmed" onclick="handleClicked('.size-options', this)">
+              <p>XL</p>
+            </li>
+            <li class="dimmed" onclick="handleClicked('.size-options', this)">
+              <p>XXL</p>
+            </li>
+          </ul>
+        </div>
+        <div class="button-container">
+          <button>ADD TO BAG</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
