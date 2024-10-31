@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: rgb(17, 17, 18);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  height: 10dvh;
+}
+
+#left-options {
+  flex: 1;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#right-social {
+  flex: 1;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-section {
+  display: flex;
+  height: 100dvh;
+  overflow: scroll;
+}
+
+/* aca va el saludo y mi nombre y alguna cosa mas */
+#name-info {
+  flex: 1;
+}
+
+#profile-img {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-img img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+}
+
+#experience-info {
+  flex: 1;
+}
