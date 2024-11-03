@@ -15,16 +15,38 @@ nav {
 
 #left-options {
   flex: 1;
-  background-color: blue;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
 
+.menu-button.active {
+  width: 15%;
+  height: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(183, 255, 1);
+  color: black;
+}
+
+.menu-button.unactive {
+  width: 15%;
+  height: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(28, 29, 25);
+  color: white;
+}
+
+.vertical-separator {
+  width: 1px;
+  height: 90%;
+  background-color: rgb(30, 30, 30);
+}
+
 #right-social {
   flex: 1;
-  background-color: blueviolet;
   display: flex;
   align-items: center;
   justify-content: flex-end;
