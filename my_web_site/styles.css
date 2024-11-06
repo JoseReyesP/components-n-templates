@@ -35,8 +35,11 @@ nav {
   height: 90%;
   margin: 10px;
   border-radius: 10px;
-  background-color: rgb(28, 29, 25);
   color: white;
+}
+
+.menu-button.unactive:hover {
+  background-color: rgb(28, 29, 25);
 }
 
 .vertical-separator {
