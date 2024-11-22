@@ -22,20 +22,26 @@ nav {
 }
 
 .menu-button.active {
+  display: flex;
   width: 15%;
   height: 90%;
   margin: 10px;
   border-radius: 10px;
   background-color: rgb(183, 255, 1);
   color: black;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-button.unactive {
+  display: flex;
   width: 15%;
   height: 90%;
   margin: 10px;
   border-radius: 10px;
   color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-button.unactive:hover {
@@ -46,6 +52,21 @@ nav {
   width: 1px;
   height: 90%;
   background-color: rgb(30, 30, 30);
+}
+
+#button-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+#button-content img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 5px;
+  mix-blend-mode: initial;
 }
 
 #right-social {
